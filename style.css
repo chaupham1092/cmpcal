@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Use min-height instead of height */
+  padding: 20px; /* Ensure there's space for scrolling on smaller screens */
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  overflow-y: auto; /* Prevent content from being cut off */
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #555;
+}
+
+.input-row {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input:disabled {
+  background-color: #f5f5f5;
+}
+
+button {
+  width: 100%; /* Button takes half the container width */
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Optional spacing */
+  text-align: center; /* Align text inside the button */
+}
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button#resetBtn {
+  background-color: red;
+}
+
+button#resetBtn:hover {
+  background-color: darkred;
+}
+
+.results {
+  margin-top: 15px;
+  font-size: 16px; /* Smaller, regular paragraph font size */
+  font-weight: normal; /* Remove bold formatting */
+  text-align: left; /* Left-align the text */
+  color: #333; /* Use a standard text color */
+  font-weight: bold;
+}
+
+.note {
+  font-size: 14px;
+  text-align: center;
+  color: #888;
+  margin-top: 15px;
+}
+
+/* CPM Info Section */
+.cpm-info {
+  background-color: #fff9c4; /* Light yellow background */
+  padding: 15px 20px; /* Add padding for spacing */
+  margin-top: 20px; /* Space above the section */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Smaller font size for readability */
+  line-height: 1.6; /* Improve line spacing for better readability */
+  color: #555; /* Text color for good contrast */
+}
+
+.cpm-info p {
+  margin-bottom: 15px; /* Add spacing between paragraphs */
+}
+
+.cpm-info strong {
+  color: #333; /* Darker color for emphasized text */
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 70%; /* Expand container width for large PC screens */
+    max-width: 1000px; /* Wider max width for large displays */
+  }
+
+  h1 {
+    font-size: 24px; /* Slightly larger headers */
+  }
+
+  label {
+    font-size: 16px; /* Improved readability */
+  }
+
+  input {
+    font-size: 15px; /* Adjust input font size */
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

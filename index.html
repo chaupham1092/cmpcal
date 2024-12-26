@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPM Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <p class="note">Value updates automatically when Cost, Impressions, or CPM are entered or re-entered.</p>
+    <!-- CPM Calculator -->
+    <h1>CPM Calculator</h1>
+    <div class="input-row">
+      <label for="cost">Cost:</label>
+      <input type="text" id="cost" placeholder="Enter Cost">
+    </div>
+
+    <div class="input-row">
+      <label for="impressions">Impressions:</label>
+      <input type="text" id="impressions" placeholder="Enter Impressions">
+    </div>
+
+    <div class="input-row">
+      <label for="cpm">CPM:</label>
+      <input type="text" id="cpm" disabled placeholder="CPM will be calculated">
+    </div>
+
+    <div class="results">
+      <p id="resultText">Your CPM is …</p>
+    </div>
+    <button id="resetCPMBtn">Reset CPM Calculator</button>
+
+    <!-- Cost Calculator -->
+    <h1>Cost Calculator</h1>
+    <div class="input-row">
+      <label for="costCalc">Cost:</label>
+      <input type="text" id="costCalc" disabled placeholder="Cost will be calculated">
+    </div>
+
+    <div class="input-row">
+      <label for="cpmCalc">CPM:</label>
+      <input type="text" id="cpmCalc" placeholder="Enter CPM">
+    </div>
+
+    <div class="input-row">
+      <label for="impressionsCalc">Impressions:</label>
+      <input type="text" id="impressionsCalc" placeholder="Enter Impressions">
+    </div>
+    
+    <div class="results">
+      <p id="costResultText">Your Media Cost is …</p>
+    </div>
+    <button id="resetCostBtn">Reset Cost Calculator</button>
+
+    <!-- Impressions Calculator -->
+    <h1>Impressions Calculator</h1>
+    <div class="input-row">
+      <label for="impressionsCalcResult">Impressions:</label>
+      <input type="text" id="impressionsCalcResult" disabled placeholder="Impressions will be calculated">
+    </div>
+
+    <div class="input-row">
+      <label for="costCalcResult">Cost:</label>
+      <input type="text" id="costCalcResult" placeholder="Enter Cost">
+    </div>
+
+    <div class="input-row">
+      <label for="cpmCalcResult">CPM:</label>
+      <input type="text" id="cpmCalcResult" placeholder="Enter CPM">
+    </div>
+
+    <div class="results">
+      <p id="impressionsResultText">Your Total Impressions is …</p>
+    </div>
+    <div class="button-row">
+      <button id="resetImpressionsBtn">Reset Impressions Calculator</button>
+    </div>
+    <div class="button-row">
+      <button id="resetBtn">Reset All Calculators</button>
+    </div>
+
+    <!-- CPM Info Section -->
+    <div class="cpm-info">
+      <p>
+        <strong>CPM (Cost Per Thousand Impressions)</strong> is a digital marketing metric that measures the cost of 1,000 impressions (views) of an ad. 
+        It helps advertisers understand the cost-effectiveness of their ad campaigns in terms of visibility.
+      </p>
+      <p><strong>Formula:</strong><br>
+        CPM = (Total Cost of Ad Campaign / Total Impressions) × 1000
+      </p>
+      <p><strong>Explanation:</strong><br>
+        Total Cost of Ad Campaign: The amount spent on the ad.<br>
+        Total Impressions: The total number of times the ad is displayed.<br>
+        For example, if you spent $500 on an ad that generated 200,000 impressions, the CPM would be:<br>
+        CPM = (500 / 200,000) × 1000 = 2.5
+      </p>
+      <p>So, the cost per 1,000 impressions is <strong>$2.50</strong>.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
