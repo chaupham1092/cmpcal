@@ -15,13 +15,13 @@ body {
 }
 
 .container {
-  background-color: white;
+  height: 1550px; /* Sets a default height */
+  width: 100%; /* Optionally specify the width */
+  max-width: 800px; /* Restricts maximum width */
+  overflow-y: auto; /* Adds scrolling if content overflows */
   padding: 20px;
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 800px;
-  overflow-y: auto; /* Prevent content from being cut off */
 }
 
 h1 {
