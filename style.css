@@ -9,26 +9,28 @@ body {
   background-color: #f4f7fa;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh; /* Use min-height instead of height */
-  padding: 20px; /* Ensure there's space for scrolling on smaller screens */
+  align-items: flex-start; /* Align content at the top */
+  min-height: 100vh;
+  padding: 20px; /* Add padding to avoid touching screen edges */
+}
+
+main {
+  max-width: 1080px;
+  width: 100%;
 }
 
 .container {
-  width: 100%; /* Make the container take full width */
-  max-width: none; /* Remove any maximum width */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-
 
 h1 {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 24px;
   color: #333;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 h2 {
@@ -42,16 +44,14 @@ h2 {
 }
 
 label {
-  font-size: 16px;
   display: block;
   margin-bottom: 5px;
-  color: #333;
+  color: #555;
 }
 
 input {
   width: 100%;
   padding: 8px;
-  font-size: 16px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
@@ -61,16 +61,14 @@ input:disabled {
 }
 
 button {
-  width: 100%; /* Button takes half the container width */
+  width: 100%;
   padding: 10px;
-  font-size: 16px;
   background-color: #007bff;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px; /* Optional spacing */
-  text-align: center; /* Align text inside the button */
+  margin-top: 10px;
 }
 
 
@@ -78,6 +76,13 @@ button:hover {
   background-color: #0056b3;
 }
 
+p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Reset All Button Styling */
 button#resetBtn {
   background-color: red;
 }
@@ -119,27 +124,4 @@ button#resetBtn:hover {
 
 .cpm-info strong {
   color: #333; /* Darker color for emphasized text */
-}
-
-@media (min-width: 1024px) {
-  .container {
-    width: 70%; /* Expand container width for large PC screens */
-    max-width: 1000px; /* Wider max width for large displays */
-  }
-
-  h1 {
-    font-size: 24px; /* Slightly larger headers */
-  }
-
-  label {
-    font-size: 16px; /* Improved readability */
-  }
-
-  input {
-    font-size: 15px; /* Adjust input font size */
-  }
-
-  button {
-    font-size: 15px;
-  }
 }
