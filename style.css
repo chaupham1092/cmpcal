@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  height: 1550px; /* Sets a default height */
+  height: 1600px; /* Sets a default height */
   width: 100%; /* Optionally specify the width */
   max-width: 800px; /* Restricts maximum width */
   overflow-y: auto; /* Adds scrolling if content overflows */
