@@ -15,14 +15,13 @@ body {
 }
 
 .container {
-  height: 1600px; /* Sets a default height */
-  width: 100%; /* Optionally specify the width */
-  max-width: 1000px; /* Restricts maximum width */
-  overflow-y: auto; /* Adds scrolling if content overflows */
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
+  width: 100%; /* Make the container take full width */
+  max-width: none; /* Remove any maximum width */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
+
+
 
 h1 {
   text-align: center;
