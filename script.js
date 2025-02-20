@@ -1,3 +1,8 @@
+// Add event listeners to Calculate buttons
+document.getElementById('calculateCPMBtn').addEventListener('click', calculateCPM);
+document.getElementById('calculateCostBtn').addEventListener('click', calculateCost);
+document.getElementById('calculateImpressionsBtn').addEventListener('click', calculateImpressions);
+
 // Format the number to currency format (e.g., $1,000.00)
 function formatCurrency(value) {
   return '$' + parseFloat(value).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
